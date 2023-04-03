@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --heigh-header: 86.4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 8%, 95%);
+}
+
+.container {
+    height: 100vh;
+}
+
+/* header */
+
+.header {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.img-logo {
+    display: flex;
+    position: relative;
+    top: 4px;
+}
+
+.nav-bar {
+    flex-basis: 1000px;
+}
+
+.nav-bar .nav-bar-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.list-item .item-link{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.list-item .item-link:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.arrow-up {
+    display: none;
+}  
+
+.arrow-down {
+    display: block;
+}
+
+.user-place {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.title {
+    color: hsl(0, 0%, 41%);
+    cursor: pointer;
+}
+
+.title:hover {
+    color: hsl(0, 0%, 8%);
+}
+
+.register {
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 16px;
+    padding: 10px 18px 8px;
+    cursor: pointer;
+}
+
+.register:hover {
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
+}
+
+/* .list-item:first-child:hover .nav-bar-features {
+    display: block;
+} */
+
+.nav-bar-features::after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    display: block;
+}
+
+.nav-bar-features {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 150px;
+    padding: 18px 18px 5px;
+    border-radius: 8px;
+    box-shadow: 5px 8px 10px 3px rgba(0, 0, 0, 0.04);
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
+    display: none;
+    animation: fadeIn linear .3s;
+}
+
+.nav-bar-features-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.nav-bar-features-link {
+    text-decoration: none;
+    padding-left: 14px;
+    color: hsl(0, 0%, 41%);
+}
+
+/* .list-item:nth-child(2):hover .nav-bar-company {
+    display: block;
+} */
+
+.nav-bar-company {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 130px;
+    padding: 18px 18px 0;
+    border-radius: 8px;
+    box-shadow: 5px 8px 10px 3px rgba(0, 0, 0, 0.04);
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
+    display: none;
+    animation: fadeIn linear .3s;
+}
+
+.active {
+    display: block !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    } to {
+        opacity: 1;
+    }
+}
+
+.nav-bar-company::after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    right: 0;
+    height: 20px;
+    width: 100%;
+    display: block;
+}
+
+.nav-bar-company-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.nav-bar-company-link {
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+
+.nav-bar-mobile {
+    display: none;
+}
+
+.icon-menu {
+    display: none;
+}
+
+/* content */
+
+.content {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 30px;
+}
+
+.text-content {
+    width: 55%;
+}
+
+.heading-content {
+    width: 90%;
+    font-size: 37px;
+    padding: 70px 0;
+}
+
+.desc-content {
+    width: 84%;
+    font-size: 20px;
+    color: hsl(0, 0%, 41%);
+    padding-bottom: 40px;
+}
+
+.btn {
+    padding: 14px 40px;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 98%);
+    margin-bottom: 36px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+
+.image-content {
+    width: 45%;
+}
+
+.image-content .desktop {
+    width: 526px;
+    height: 580.4px;
+    display: block;
+}
+
+.image-content .mobile {
+    display: none;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    width: 80%;
+}

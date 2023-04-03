@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="responsive.css">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="header">
+        <!-- logo -->
+        <div class="img-logo">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <!-- navbar -->
+        <div class="nav-bar">
+          <ul class="nav-bar-list">
+            <li class="list-item" id="features">
+              <a href="#" class="item-link">Features</a>
+              <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
+              <img src="images/icon-arrow-up.svg" alt="" class="arrow-up" />
+              <ul class="nav-bar-features">
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-todo.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Todo List</a>
+                </li>
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-calendar.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Calendar</a>
+                </li>
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-reminders.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Reminders</a>
+                </li>
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-planning.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item" id="company">
+              <a href="#" class="item-link">Company</a>
+              <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
+              <img src="images/icon-arrow-up.svg" alt="" class="arrow-up" />
+              <ul class="nav-bar-company">
+                <li class="nav-bar-company-item">
+                  <a href="#" class="nav-bar-company-link">History</a>
+                </li>
+                <li class="nav-bar-company-item">
+                  <a href="#" class="nav-bar-company-link">Our Team</a>
+                </li>
+                <li class="nav-bar-company-item">
+                  <a href="#" class="nav-bar-company-link">Blog</a>
+                </li>
+              </ul>
+            </li>
+            <li class="list-item">
+              <a href="#" class="item-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="item-link">About</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- container overlay -->
+        <div class="contaier-overlay"></div>
+
+        <!-- nav bar mobile -->
+        <img class="icon-menu" src="images/icon-menu.svg" alt="">
+        <div class="nav-bar-mobile">
+          <img class="close-menu" src="images/icon-close-menu.svg" alt="">
+          <ul class="nav-bar-list">
+            <li class="list-item" id="features">
+              <a href="#" class="item-link">Features</a>
+              <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
+              <img src="images/icon-arrow-up.svg" alt="" class="arrow-up" />
+              
+            </li>
+              <ul class="nav-bar-features">
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-todo.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Todo List</a>
+                </li>
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-calendar.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Calendar</a>
+                </li>
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-reminders.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Reminders</a>
+                </li>
+                <li class="nav-bar-features-item">
+                  <img src="images/icon-planning.svg" alt="" />
+                  <a href="#" class="nav-bar-features-link">Planning</a>
+                </li>
+              </ul>
+            <li class="list-item" id="company">
+              <a href="#" class="item-link">Company</a>
+              <img class="arrow-down" src="images/icon-arrow-down.svg" alt="" />
+              <img src="images/icon-arrow-up.svg" alt="" class="arrow-up" />
+              
+            </li>
+            <ul class="nav-bar-company">
+              <li class="nav-bar-company-item">
+                <a href="#" class="nav-bar-company-link">History</a>
+              </li>
+              <li class="nav-bar-company-item">
+                <a href="#" class="nav-bar-company-link">Our Team</a>
+              </li>
+              <li class="nav-bar-company-item">
+                <a href="#" class="nav-bar-company-link">Blog</a>
+              </li>
+            </ul>
+            <li class="list-item">
+              <a href="#" class="item-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="item-link">About</a>
+            </li>
+          </ul>
+          <!-- user place mobile -->
+          <div class="user-place-mobile">
+            <!-- login -->
+            <div class="login">
+              <p class="title">Login</p>
+            </div>
+            <!-- register -->
+            <div class="register">
+              <p class="title">Register</p>
+            </div>
+          </div>
+        </div>
+        <!-- login-register -->
+        <div class="user-place">
+          <!-- login -->
+          <div class="login">
+            <p class="title">Login</p>
+          </div>
+          <!-- register -->
+          <div class="register">
+            <p class="title">Register</p>
+          </div>
+        </div>
+      </header>
+      <!-- body -->
+      <div class="content">
+        <!-- text content -->
+        <div class="text-content">
+          <!-- heading content -->
+          <div class="heading-content">
+            <h1 class="title-content">Make remote work</h1>
+          </div>
+          <!-- desc content -->
+          <div class="desc-content">
+            <p class="desc">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+          </div>
+          <!-- btn -->
+          <button class="btn">Learn more</button>
+
+          <!-- content footer -->
+          <div class="content-footer">
+            <div class="img-footer">
+              <img src="images/client-databiz.svg" alt="" />
+            </div>
+            <div class="img-footer">
+              <img src="images/client-audiophile.svg" alt="" />
+            </div>
+            <div class="img-footer">
+              <img src="images/client-meet.svg" alt="" />
+            </div>
+            <div class="img-footer">
+              <img src="images/client-maker.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="image-content">
+          <img class="desktop" src="images/image-hero-desktop.png" alt="" />
+          <img class="mobile" src="images/image-hero-mobile.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
